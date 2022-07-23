@@ -19,13 +19,19 @@
     <title>Studio</title>
   </head>
   <body>
+    <div class="backdrop is-hidden"data-modal>
+      <div class="model" >
+        <button data-modal-close class="model-b" type="button"><svg width="11" height="11"><use href="./imges/symbol-defs.svg#icon-Vector"></use>
+        </svg></button>
+      </div>
+    </div>
     <!--header-->
     <header class="head">
       <div class="container header">
         <a href="" class="logo"><span>Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
-            <li class="item"><a class="link-current" href="">Студия</a></li>
+            <li class="item"><a class="link current" href="">Студия</a></li>
             <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
             <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
@@ -56,7 +62,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button" >Заказать услугу</button>
         </div>
       </section>
       <!--skill description-->
@@ -108,11 +114,21 @@
         <div class="container">
           <h2 class="work-list">Чем мы занимаемся</h2>
           <ul class="work">
-            <li class="img"><img src="./imges/image1.jpg" alt="пишем-сайты " width="370" /></li>
+            <li class="img"><img src="./imges/image1.jpg" alt="пишем-сайты " width="370" />
+            <div class="img-box">
+              <p class="img-text">Десктопные приложения</p>
+            </div></li>
             <li class="img">
               <img src="./imges/image2.jpg" alt="подстраиваем сайты для телефонов" width="370" />
+              <div class="img-box">
+                <p class="img-text">Мобильные приложения</p>
+              </div>
             </li>
-            <li class="img"><img src="./imges/image3.jpg" alt="работа с apple" width="370" /></li>
+            <li class="img"><img src="./imges/image3.jpg" alt="работа с apple" width="370" />
+            <div class="img-box">
+              <p class="img-text">Дизайнерские решения</p>
+            </div>
+          </li>
           </ul>
         </div>
       </section>
@@ -256,7 +272,7 @@
           </ul>
         </div>
       </section>
-    </main>
+  
     <!------------------------ regular customers -------------------------->
     <section class="customers">
       <div class="container">
@@ -301,6 +317,7 @@
         </ul>
       </div>
     </section>
+   </main>
 
     <!-----------------footer------------------------->
     <footer class="footer" >
@@ -355,5 +372,6 @@
       </div>
     
     </footer>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
