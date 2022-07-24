@@ -46,10 +46,10 @@ p {
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop.is-hidden .model {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
-.model {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,7 +63,7 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.model-b {
+.modal-b {
   margin-left: 490px;
   margin-top: 8px;
   width: 30px;
