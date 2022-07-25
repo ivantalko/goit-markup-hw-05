@@ -218,13 +218,13 @@ p {
 
 /* hero */
 .hero {
-  width: 1600px;
   display: block;
-  text-align: center;
-  align-items: center;
-  margin: auto;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
+  align-items: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../imges/hero.jpg');
   background-color: #2f303a;
@@ -475,7 +475,7 @@ p {
   fill: #afb1b8;
   transition: 250ms var(--timing-function);
 }
-.customers-icon:hover {
+.customers-link:hover .customers-icon {
   fill: #2196f3;
 }
 .customers-link:focus .customers-icon {
